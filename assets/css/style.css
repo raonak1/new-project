@@ -1,0 +1,385 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Global CSS */
+body{
+	font-family: 'Open Sans',sans-serif;
+	font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Montserrat', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.no-padding{
+	padding: 0;
+
+}
+ul{
+	padding: 0;
+}
+ul li{
+	list-style: none;
+
+}
+p{
+	font-style: none;
+}
+
+/* Header Section */
+
+header{
+	padding: 20px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	color: #28377e;
+	letter-spacing: -0.5px;
+	transition: all 0.3s ease-in-out;
+}
+.navbar-expand-lg .navbar-nav .nav-link: hover{
+	color: #f2622c;
+}
+
+/* Banner Section */
+
+.banner-section{
+	position: relative;
+	background: url(../img/banner-bg.png) no-repeat center top;
+	background-size: cover;
+	padding: 225px 0 75px;
+	z-index: -1;
+}
+.banner-section::before{
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background: url(../img/banner-left.png) no-repeat center right;
+	z-index: -1;
+	
+}
+.banner-section h1{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 80px;
+	line-height: 92px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 150px;
+}
+
+
+.banner-section h1 span{
+	display: block;
+}
+.banner-section .fa-chevron-down{
+	text-align: center;
+	display: block;
+	color: #fff;
+	font-size: 24px;
+
+}
+
+/* Who We Are Section */
+
+.about-us{
+	padding: 100px 0;
+}
+.about-us h2{
+	position: relative;
+	font-weight: 700;
+	font-size: 36px;
+	color: #28377e;
+	margin-bottom: 30px;
+}
+.about-us h2::before{
+	content: "";
+	position: absolute;
+	width: 70px;
+	height: 5px;
+	top: -20px;
+	left: 0;
+	background: #f2622c;
+}
+.about-us p{
+	margin-bottom: 30px;
+	color: #a7a7aa;
+	font-weight: 500;
+}
+.about-us img{
+	display: block;
+	margin: 0 auto;
+}
+/* Service Section */
+.service-section{
+	position: relative;
+	padding: 100px 0 75px;
+	background: #f7f8f8;
+	z-index: -1;
+}
+.service-section::before{
+	content: "";
+	position: absolute;
+	width: 55%;
+	height: 72%;
+	right: 0;
+	bottom: 20px;
+	background: url(../img/servicer-bg.png) no-repeat center left ;
+	
+}
+.title-dash{
+	width: 70px;
+	height: 5px;
+	background: #f2622c;
+	display: block;
+	margin: 0 auto 20px;
+}
+.service-section h2{
+	position: relative;
+	margin-bottom: 100px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 36px;
+	color: #28377e;
+	text-transform: uppercase;
+}
+.service-content{
+	margin-top: 50px;
+	z-index: 9999;
+}
+.service-item{
+	position: relative;
+	width: 85%;
+	margin: 0 auto;
+}
+.service-item img{
+	width: 100%;
+	height: auto;
+}
+.service-item .item-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}  
+.service-item .item-content h3{
+	margin-top: 60%;
+	text-align: center;
+	font-size: 26px;
+	line-height: 38px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+.service-item .item-content a{
+	display: block;
+}
+.service-item .item-content a .fa-arrow-right-long{
+	position: absolute;
+	bottom: 85px;
+	left: 100px;
+	width: 100px;
+	text-align: center;
+	color: #fff;
+	font-size: 28px;	
+}
+.sone{
+	float: right;
+}
+.stwo{
+	margin: 0 auto;
+} 
+
+/* Attorny SEction Start*/
+.attorny-secrion{
+	background: #28377e ;
+	padding: 150px 0;
+}
+.attorny-secrion h2{
+	position: relative;
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 36px;
+	color: #fff;
+	line-height: 50px;
+	text-transform: uppercase;
+	margin-top: 125px;
+}
+.attorny-secrion h2 span{
+	display: block;
+}
+.attorny-secrion h2::before{
+	content: "";
+	position: absolute;
+	width: 70px;
+	height: 5px;
+	top: -20px;
+	left: 0;
+	background: #f2622c;
+}
+.attorny-secrion p{
+	color: #929dcf;
+	padding-right: 50px;
+	margin-bottom: 25px;
+}
+.attorny-secrion a{
+	color: #f2622c;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.attorny-item{
+	position: relative;
+	margin-bottom: 25px;
+}
+.attorny-item img{
+	width: 100%;
+}
+.attorny-item .attorny-name{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 27.5%;
+}
+.attorny-item .attorny-name h3{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 40px;
+}
+.attorny-item .attorny-name h3 span{
+	display: block;
+}
+
+
+
+
+/*The languages Section*/
+.language-section {
+    padding: 75px 0;	
+}
+.language-section  h2{
+    position: relative;
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 36px;
+	color: #28377e;
+	text-transform: uppercase;
+}
+.language-section h3{
+    color: #28377e;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+.language-section p{
+    color: #ababab;
+}
+.language-section a{
+    color: #f2622c;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+
+}
+.language-section a:hover{
+    color: #28377e;
+    
+}
+
+/* Contact Section Start*/
+.contact-us{
+	background: #28377e;
+	padding: 75px 0;
+}
+.contact-us h2{
+	position: relative;
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 36px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.contact-us .mb-3{
+	margin-bottom: 30px;
+}
+.contact-us .form-control{
+	background: transparent;
+	color: #fff ;
+	border: none;
+	border-bottom: 2px solid #4759a7;
+	border-radius: 0;
+	outline: none;
+	box-shadow: none;
+
+}
+.contact-us input::placeholder,
+.contact-us textarea::placeholder{
+    color: #fff;
+}
+.contact-us .btn-send{
+	background: #f2622c ;
+	color: #fff;
+	font-size: 18px;
+	padding: 12px 65px;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	display: block;
+	margin: 50px auto 0;
+	transition: all 0.3s ease-in-out;
+}
+.contact-us .btn-send:hover{
+background: #0c1234;
+
+}
+
+/* Footer Section start*/
+footer{
+	background: #0c1234;
+	padding: 20px 0 10px;
+}
+footer p{
+    color: #616ca8;
+    font-size: 16px;
+    margin: 0;
+}
+.social-media{
+	float: right;
+}
+.social-media ul li{
+	display: inline;
+	margin: 0 8px;
+}
+.social-media ul li a .fa{
+	color: #b1b7dd;
+	transition: all 0.4s ease-in-out;
+}
+.social-media ul li a .fa:hover{
+	color:#fff;
+}
+
+
+/* Media Query For Notebook*/
+@media (min-width: 768px) and (max-width: 990px){
+	/*All CSS Code will gose here*/
+}
+/* Media Query For Tablet*/
+@media (min-width: 576px) and (max-width: 768px){
+	/*All CSS Code will gose here*/
+}
+/* Media Query For Mobile*/
+@media (min-width: 320px) and (max-width: 576px){
+	/*All CSS Code will gose here*/
+}
